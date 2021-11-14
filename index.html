@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <main>
+      <!-- header -->
+      <header>
+        <div class="hamburger">
+          <img src="./images/icon-menu.svg" alt="icon-menu" />
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <!-- navigation -->
+        <nav>
+          <ul>
+            <li>
+              <img src="./images/icon-close.svg" alt="icon-close" id="close" />
+            </li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cart-section">
+          <div class="cart">
+            <div class="cart_image">
+              <small id="item_in_cart">0</small>
+              <img src="./images/icon-cart.svg" alt="icon-cart" id="cart-img" />
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="./images/image-avatar.png" alt="image-avatar" />
+          </div>
+        </div>
+        <div class="cart_modal">
+          <div class="modal-content">
+            <p>Cart</p>
+            <div class="detail"></div>
+            <button>Checkout</button>
+          </div>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="hero-image">
+          <img
+            src="./images/image-product-1.jpg"
+            alt="image-product-1"
+            id="main-pics"
+          />
+          <div class="arrows">
+            <div class="prev">
+              <img src="./images/icon-previous.svg" alt="icon-previous" />
+            </div>
+            <div class="next">
+              <img src="./images/icon-next.svg" alt="next-icon" />
+            </div>
+          </div>
+          <div class="thumbnails">
+            <div class="img img-1" data-img="0"></div>
+            <div class="img img-2" data-img="1"></div>
+            <div class="img img-3" data-img="2"></div>
+            <div class="img img-4" data-img="3"></div>
+          </div>
+        </div>
+        <div class="hero-info">
+          <h3>Sneaker Company</h3>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <section class="add-to-cart">
+            <div class="pricing">
+              <div class="bonus">
+                <h1>$125.00</h1>
+                <h3>50%</h3>
+              </div>
+
+              <p>$250.00</p>
+            </div>
+            <div class="number">
+              <div class="val">
+                <img
+                  src="./images/icon-minus.svg"
+                  alt="icon-minus"
+                  data-id="minus"
+                />
+
+                <h3>0</h3>
+
+                <img
+                  src="./images/icon-plus.svg"
+                  alt="icon-plus"
+                  data-id="plus"
+                />
+              </div>
+              <div role="button" id="button">
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="#69707D"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+                <p>Add to cart</p>
+              </div>
+            </div>
+            <p id="notice">choose quantity</p>
+          </section>
+        </div>
+      </section>
+      <div class="lightbox">
+        <div class="lightbox-wrap">
+          <div class="close-box">
+            <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                fill="#69707D"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="showcase">
+            <img src="./images/image-product-1.jpg" alt="image-product-1" />
+          </div>
+          <div class="lightbox-arrows">
+            <div class="prev">
+              <img src="./images/icon-previous.svg" alt="icon-previous" />
+            </div>
+            <div class="next">
+              <img src="./images/icon-next.svg" alt="next-icon" />
+            </div>
+          </div>
+          <div class="box-thumbnails">
+            <div class="img img-1" data-id="0"></div>
+            <div class="img img-2" data-id="1"></div>
+            <div class="img img-3" data-id="2"></div>
+            <div class="img img-4" data-id="3"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tridwan</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
